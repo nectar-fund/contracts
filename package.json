@@ -1,0 +1,28 @@
+{
+  "name": "contracts",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Nectar.fund contracts for BSC",
+  "scripts": {
+    "node": "MODE=BINANCEPROD npx hardhat node --fork https://bsc-dataseed.binance.org/",
+    "test": "MODE=BINANCEPROD npx hardhat test --network hardhat_local",
+    "deploy:test": "MODE=BINANCETEST npx hardhat run --network testnet scripts/deploy.js",
+    "deploy:prod": "MODE=BINANCEPROD npx hardhat run --network mainnet scripts/deploy.js"
+  },
+  "author": "dev@nectar.fund",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.1",
+    "@nomiclabs/hardhat-etherscan": "^2.1.1",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/contracts": "^3.4.0",
+    "chai": "^4.3.0",
+    "ethereum-waffle": "^3.2.2",
+    "ethers": "^5.0.31",
+    "hardhat": "^2.0.10"
+  },
+  "dependencies": {
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "cli-interact": "^0.1.9",
+    "dotenv": "^8.2.0"
+  }
+}
