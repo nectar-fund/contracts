@@ -1,4 +1,4 @@
-# nectar.fund
+# [nectar.fund](https://nectar.fund)
 
 ![nectar.fund](./img/nectar.png)
 
